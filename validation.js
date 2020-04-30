@@ -4,6 +4,9 @@ var reg2 = new RegExp(/a-z/,'gi')           // these are the two ways of writing
 const patterns = {
   // telephone: /^[0-9]{11}$/,
   telephone: /^\d{11}$/,
+  username: /^[a-z\d]{5,12}$/i,
+  password: /^[\w@-]{8,20}$/,
+  slug:/^[a-z\d-]{8,20}$/,
 };
 
 const inputs = document.querySelectorAll('input');
